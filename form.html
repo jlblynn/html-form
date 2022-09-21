@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Simple html form</title>
+</head>
+
+<body>
+    <form>
+        <p>Please type your first and last name.</p>
+        <input type="text" placeholder="Firstname" required>
+        <input type="text" placeholder="Lastname" required>
+
+        <div>
+        <p>Please select your gender.</p>
+        <label for="male">Male:</label>
+        <input name="gender" id="male" type="radio" value="male" required>
+        <label for="female">Female:</label>
+        <input name="gender" id="female" type="radio" value="female">
+        </div>
+
+        <div>
+        <p>Please enter your email and password.</p>
+        <label>
+            Email:
+            <input name="email" type="email" placeholder="Email" required>
+        </label>
+        <label>
+            Password:
+            <input name="password" type="password" minlength="8" required>
+        </label>
+        </div>
+
+        <div>
+        <p>Please select your birthday:</p>
+        <select name="birthday_day">
+            <option value="Null">Day</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+        </select>
+        <select name="birthday_month">
+                <option value="Null">Month</option>
+                <option value="Jan">01</option>
+                <option value="Feb">02</option>
+                <option>03</option>
+                <option>04</option>
+        </select>
+        <select name="birthday_year">
+                <option value="Null">Year</option>
+                <option>1900</option>
+                <option>1901</option>
+                <option>1902</option>
+                <option>1903</option>
+        </select>
+        </div>
+        <br>
+        <div>
+        <label for="accept">I accept the current terms and conditions:</label>
+        <input name="termsConditions" id="accept" type="checkbox" required>
+        </div>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
